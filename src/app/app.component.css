@@ -1,0 +1,24 @@
+.c1{
+    background-color: rgb(17, 17, 244);
+    color: rgb(225, 230, 235);
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c2{
+    background-color: rgb(141, 243, 243);
+    color: rgb(14, 107, 40);
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c3{
+    color: black;
+    font-size: x-large;
+}
+.c4{
+    background-color: burlywood;
+    color: crimson;
+}
+.c5{
+    background-color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

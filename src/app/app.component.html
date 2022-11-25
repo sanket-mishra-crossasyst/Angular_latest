@@ -1,0 +1,80 @@
+
+<!-- <h1 class="bg-primary"> Welcome To Bootstrap</h1>
+<button mat-button> Primary </button>
+<button mat-button color="primary">Primary</button>
+<button mat-button color="accent">Accent</button>
+
+<h1 class="c1">{{ title}} </h1>
+<div *ngIf="success_msg; else updated_msg; else error_msg" style="background-color: brown;"> 
+  User added successfully
+</div>
+<div [ngClass]="'c1'">This is ngClass Example</div>
+<div [ngClass]="'c1 c2'">This is ngClass Example with 2Class</div>
+<div [ngClass]="stylescss">This is ngClass Example with variable </div>
+
+<div [ngClass]="styleMethod()">This is ngClass Example with style Method</div>
+
+<div>{{ pageHeading}}</div>
+<p [style.color]="fontColor"> {{fullName.firstName}} {{fullName.lastName}}</p>
+<div *ngIf="userLogin">{{fullName.firstName}}</div>
+<img [src]="imageUrl" [alt]="imgALT"/>
+
+
+<table>
+  <tr >
+    <th>First Name </th>
+    <th>Last Name</th>
+    <th>Contact</th>
+  </tr>
+  <tr *ngFor="let contact of contacts">
+    <td>  {{ contact.firstName }}</td>
+    <td> {{ contact.lastName }}</td>
+    <td> {{ contact.contact }}</td>
+  </tr>
+</table>
+<ng-template #updated_msg> user updated</ng-template>
+
+<ng-template #error_msg> user not added</ng-template>
+
+<h2>Learning ngFor</h2>
+
+<ul>
+  <li *ngFor="let contact of contacts; index as i">
+     <div *ngIf="f">this is first recordng </div>  
+    <div>
+        {{ i }} {{ contact.firstName }}  {{ contact.lastName}}  {{ contact.contact}}
+      </div>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+<h1>{{ title }}</h1>
+<app-list-profile></app-list-profile>
+<router-outlet></router-outlet>
+<button (click)="sayHello()"> Event Buinding Example</button>
+<div (mouseover)="highlightBGcolor()">Event Buinding Example2</div>
+<button (mouseenter)="helloUser()">click here </button>
+<input [(ngModel)]="username" />
+<p *ngIf="userLogin">{{ username }}</p>
+<button (click)="userLogin = true">click here to see </button> -->
+
+  <!-- build in pipes 
+<div> {{ lowerCaseExample | lowercase  }} </div>
+<div> UPPERCASE EXAMPLE </div>
+<div> {{ upperCaseExample | uppercase }}</div>
+<div> {{ currencyExample | currency  }} </div>
+<div> {{ dateExample | date }}</div>
+<div> {{ percentageExample | percent }}</div>
+ Customize pipe 
+<div> {{ dateExample | date : 'long' }}</div>
+<div> {{ dateExample | date : 'short' }}</div>
+<div> {{ dateExample | date : 'MM/dd/YY' }}</div>
+<div> {{ dateExample | date : 'dd,MMM.YY' }}</div>
+<div> {{ currencyExample | currency : 'INR' }} </div>
+<div> {{ percentageExample | percent : '2.2-4' }}</div>
+
+<h4> CHAINING PIPES </h4>
+<div> {{ dateExample | date : 'long' | uppercase}}</div>
+<div> {{ currencyExample | currency : 'CND' | lowercase }}</div> -->
+<button mat-stroked-button  class="c1">LOGIN </button>
+<button mat-stroked-button  class="c2" routerLink="contact">CONTACTS</button>
+<router-outlet></router-outlet>
